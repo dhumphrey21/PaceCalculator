@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pace Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculate_pace.js"></script>
+</head>
+<body>
+    <main>
+    <h1>Running Pace Calculator</h1>
+    <p id="alert"></p>
+    <p>Time: <input type="text" placeholder="Hrs" id="hours" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> : <input type="text" placeholder="Min" id="minutes" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> : <input type="text" placeholder="Sec" id="seconds" onkeypress="return event.charCode >= 48 && event.charCode <= 57">&nbsp;&nbsp;&nbsp;<input type="button" id="btnCalculateTime" value="Calculate"></p>
+
+    <p>Distance: <input type="text" id="distance" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">&nbsp;&nbsp;
+    <select id="metric">
+        <option value="Miles">Miles</option>
+        <option value="Kilometers">Kilometers</option>
+    </select>&nbsp;&nbsp;&nbsp;<input type="button" id="btnCalculateDistance" value="Calculate"></p>
+    <p>Pace: <input type="text" placeholder="Hrs" id="paceHours" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> : <input type="text" placeholder="Min" id="paceMinutes" onkeypress="return event.charCode >= 48 && event.charCode <= 57"> : <input type="text" placeholder="Sec" id="paceSeconds" onkeypress="return event.charCode >= 48 && event.charCode <= 57">&nbsp;&nbsp;&nbsp;<input type="button" id="btnCalculatePace" value="Calculate"></p>
+    <p><label id="reset">Reset</label></p>
+    </main>
+</body>
+</html>
